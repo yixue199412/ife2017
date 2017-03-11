@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	padding:0;
+	margin:0}
+body{
+	width:800px;
+	height:800px;
+	border:1px solid #999;
+	margin:0
+}
+div{
+	border:1px solid #999;
+	padding:20px
+	 }
+#content{
+	background-color:#eee;
+	height:440px;
+	position:relative;
+	margin:20px;
+	}
+#left{
+    position:absolute;
+	top:20px;
+	left:20px;   
+	width:160px;
+	height:80px;
+	background:#FFF;
+	
+	}
+#middle{
+	height:320px;
+	margin:0px 140px 40px 220px; /*实际上下左右是20px 160px 60px 240px为什么多20px 自适应宽高设置margin的值还要考虑自身padding的值??? */
+	overflow:hidden;
+	background:#FFF
+	}
+#right{
+	position:absolute;
+	right:20px;
+	top:20px;
+	width:80px;
+	background:#FFF
+	}
+#left .left_lf{
+   /* position:absolute;
+	top:20px;
+	left:20px;*/
+	float:left
+	}
+#left .left_rf{
+	position:absolute; 
+	top:20px; /*p标签自带高度20px* 设置top:20px会把距离变为40px 所以在最开始初始化 即可正确设置*/
+	right:20px;     
+}
+img{
+	width:80px;
+	height:80px
+	 }
+#right .right_img{
+	margin-bottom:20px
+}

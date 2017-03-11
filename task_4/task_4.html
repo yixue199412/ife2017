@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+body{
+    margin:0;	
+	/*position:relative; 加relative为什么不对了*/
+ }
+#content{
+	width:400px;
+	height:200px;
+	background:#ccc;
+	position:absolute; 
+ 	top: 50%; 
+	left:50%;
+ 	margin-top: -100px; 
+ 	left: 50%; 
+ 	margin-left: -200px;
+}
+#content > *{
+	height:50px;
+	width:50px;
+	background-color:#fc0;
+	position:absolute;
+}
+.left{
+	top:0px;
+	left:0px;
+	border-radius:0 0 50px 0;
+}
+.right{
+	bottom:0px;
+	right:0px;
+	border-radius:50px 0 0 0;
+}
+
+</style>
+</head>
+
+<body>
+<div id="content">
+   <div class="left">
+       
+   </div>
+   <div class="right">
+   </div>
+   
+</div>
+</body>
+</html>
